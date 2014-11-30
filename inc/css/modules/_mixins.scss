@@ -1,0 +1,96 @@
+@import "../partials/colors";
+@import "../partials/borders";
+
+@mixin background-none($color) {
+	background: none repeat scroll $color;
+}
+
+@mixin bg-image ($image, $repeating, $x, $y) {
+	$url: "../images/" + $image;
+	background: url($url) $repeating scroll $x $y transparent;
+}
+
+@mixin padding-zero {
+	padding: 0px 0px;
+}
+@mixin margin-zero {
+	margin: 0px 0px;
+}
+
+@mixin border-none {
+	border:none;
+	border-color:transparent;
+}
+
+@mixin border-gray ($pos:"") {
+	@if $pos != ""{
+		border-#{$pos}: 1px solid $color-inner-border;
+	} @else {
+		border: 1px solid $color-inner-border;
+	}
+}
+
+@mixin block-zero ($float){
+	display: block;
+	float: $float;
+	margin: 0px;
+	padding: 0px;
+}
+
+@mixin btn-template ($type) {
+	@if $type == big {
+		@include btn-big;
+	} @else { 
+		@include btn-medium;
+	}	
+	display:block;
+	color: $color-white;
+	border-radius: 3px;
+	border: 1px solid #2570A7;
+	cursor: pointer;
+	font-weight: bold;
+	background: linear-gradient(to bottom, #3A9AE1 0%, #3EA4EF 4%, #3EA3EE 8%, #2373CB 100%) repeat scroll 0% 0% transparent;
+}
+
+@mixin btn-big {
+	margin: 20px auto;
+	padding: 5px 30px;
+	font-size: 15px;
+	line-height: 28px;
+}
+
+@mixin btn-medium {
+	width: 100px;
+	margin: 10px 5px;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+@mixin label-event {
+	position: absolute;
+	padding: 0.3em 0.6em 0.3em;
+	top:15px;
+	right: 15px;
+	font-size: 85%;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($shadows...) {
+	-moz-box-shadow: $shadows;
+	-webkit-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+
+@mixin ul-li-reset {
+	display: block;
+	float: left;
+	@include padding-zero;
+	@include margin-zero;
+}

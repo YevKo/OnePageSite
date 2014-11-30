@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JobGo</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Yevgeniya Kobrina">
+	  
+		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+		<link rel="stylesheet" href="static/lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/css/style.css" type="text/css">
+		
+		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+	    <header>
+	        <nav class="navbar navbar-default container-fluid" id = "main_nav" role="navigation">
+		        <div class="container">
+		            <div class="navbar-header">
+		                
+		                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" id = "brand_img" href="#home"><img alt="JobGo" title="JobGO" src="/static/images/JobGo.png"></a>
+		            </div>
+		            <!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="main_nav_collapsed">
+			            <form class="navbar-form navbar-right">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="login">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="password">
+							</div>
+							<button type="submit" class="btn btn-default navbar-btn">Login</button>
+						</form>
+			            <a class="lang navbar-right" href="#">English</a>
+		        	</div><!-- /.navbar-collapse -->
+		        </div>
+	        </nav>
+	    </header>
+
+	    <div id="maincontainer" class="container">
+	    	<div id = "inner">
+	    		<div id = "inner-nav-container">
+			    	<nav class="navbar navbar-default" id="inner_nav" role="navigation">
+			    		<ul class="nav navbar-nav">
+				    		<li id="home"><a href="#home" class="nav_item active">Home</a></li>
+				  			<li id="jobs"><a href="#jobs" class="nav_item">Jobs</a></li>
+				  			<li id="companies"><a href="#companies" class="nav_item">Companies</a></li>
+				  			<li id="events"><a href="#events" class="nav_item">Events</a></li>
+				  		</ul>
+			    	</nav>
+			    </div>
+		    </div>
+	    	<div class= "container" id="inner_content_container">
+	    		
+	    	</div>
+	    </div>
+
+	    
+
+		<div class="hiddenContent home container">
+	    	<div class="row">
+	    		<div class="col-md-4">
+	    			<div class="area">
+		    			<h2> Header One </h2>
+		    			<h4> Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet! </h4>
+		    			<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.  </p>
+		    			<button type="button" class="btn btn-default btn-sm btn-signup">Sign Up</button>
+		    			<div class="area-img">
+		    				<img src="static/images/main_img_new.png" class="img-responsive img-thumbnail  center-block" alt="Image One">
+		    			</div>
+		    		</div>
+	    		</div>
+	    		<div class="col-md-4">
+	    			<div class="area">
+		    			<h2> Header Two </h2>
+		    			<h4> Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet! </h4>
+		    			<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.  </p>
+		    			<button type="button" class="btn btn-default btn-sm btn-signup" >Sign Up</button>
+		    			<div class="area-img">
+		    				<img src="static/images/main_img_new.png" class="img-responsive img-thumbnail  center-block" alt="Image One">
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="col-md-4">
+	    			<div class="area">
+		    			<h2> Header Three </h2>
+		    			<h4> Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet! </h4>
+		    			<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.  </p>
+		    			<button type="button" class="btn btn-default btn-sm btn-signup">Sign Up</button>
+		    			<div class="area-img">
+		    				<img src="static/images/main_img_new.png" class="img-responsive img-thumbnail  center-block" alt="Image One">
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div>
+	    </div>
+
+
+
+	    <div class="hiddenContent companies container">
+	    	<div class="row">
+	    		<div class="col-md-3 search-sidebar">
+	    			<div class="form-title left-text">
+	    				Search talents
+	    			</div>
+	    			<form role="form" id="candidate_search" name="candidate_search" method="post">
+						<div class="form-group">
+						    <label for="location_companies">Location</label>
+						    <input type="text" class="form-control" id="location_companies" placeholder="City, region or country">
+						</div>
+						<div class="form-group">
+						    <label for="industry_companies">Industry</label>
+						    <select class="form-control" id="industry_companies">
+						    	<option>IT</option>
+								<option>Finance</option>
+								<option>Construction</option>
+								<option>Law</option>
+								<option>Media</option>
+						    </select>
+						</div>
+						<div class="form-group">
+						    <label for="skills_desired">Desired skills</label>
+						    <select multiple class="form-control" id="skills_desired">
+								<option>PHP</option>
+								<option>CSS</option>
+								<option>Javascript</option>
+								<option>Python</option>
+								<option>Databases</option>
+							</select>
+						    <p class="help-block">You can choose multiple skills by holding Ctrl button</p>
+						</div>
+						<div class="form-group">
+						    <label for="work_behav">Personal evaluation</label>
+						    <input type="range" min="1" max="10" step="1" value="5" class="form-control" id="work_behav">
+						    <label for="work_eval_companies">Work behaviour</label>
+						    <input type="range" min="1" max="10" step="1" value="5" class="form-control" id="work_eval_companies">
+						</div>
+						<button type="submit" class="btn btn-default btn-submit">Find talents!</button>
+					</form>
+	    		</div>
+	    		<div class="col-md-9 search-results">
+	    			<div class="container-fluid search-results-title">
+	    				Search results
+	    			</div>
+	    			
+	    			<div class="area container-fluid"> 
+	    				<div class="row filter"> 
+	    					<div class="sort-options col-md-10">
+	    						<form class= "form-inline filter-options" name="talent-options">
+									<div class="checkbox  talent-option">
+										<label>
+											<input type="checkbox"> active
+										</label>
+									</div>
+									<div class="checkbox talent-option">
+										<label>
+											<input type="checkbox"> experience > 12m
+										</label>
+									</div>
+									<div class="checkbox talent-option">
+										<label>
+											<input type="checkbox"> avaliable full-time
+										</label>
+									</div>
+								</form>
+	    					</div>
+							<div class="search-dropdown form-inline col-md-2">
+								<div class="btn-group">
+									<button type="button" class="sort btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									    Sort by <span class="caret"></span>
+
+									</button>
+									<ul class="dropdown-menu" role="menu">
+									  	<li><a href="#">Date updated</a></li>
+									    <li><a href="#">Skills first</a></li>
+									    <li><a href="#">Personality first</a></li>
+										<li><a href="#">Experience</a></li>
+									</ul>
+								</div>
+							</div>
+	    				</div>
+	    				<div class="results-list">
+	    					<!-- dynamically add "rows" of results -->
+	    					<div class="row">
+	    						<div class = "talent-photo col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/female_p40.png" class="img-responsive img-thumbnail" alt="talent photo">
+			    					</div>
+			    				</div>
+								<div class="talent-details col-md-10">
+									<div class="row">
+										<div class="col-md-5 talent-area">
+											<h4><a href="/talent/view/id/xxx" title="Full Stack Developer">Talent Name</a></h4>
+											<dl>
+												<dt>Location: </dt>
+												<dd>Town, Country</dd>
+											</dl>
+											<dl>
+												<dt>Last updated: </dt>
+												<dd>12 days ago</dd>
+											</dl>
+											<dl>
+												<dt>Education: </dt>
+												<dd>Master of Science</dd>
+											</dl>
+											<dl>
+												<dt>Total experience: </dt>
+												<dd>12 months</dd>
+											</dl>
+										</div>
+										<div class="col-md-5 talent-evaluation">
+											<dl>
+												<dt>Personal evaluation </dt>
+												<dd> Practical, initiative</dd>
+											</dl>
+											<dl>
+												<dt>Work behaviour</dt>
+												<dd>Leader, detail-oriented</dd>
+											</dl>
+											<dl>
+												<dt>Skills match: </dt>
+												<dd>78%</dd>
+											</dl>
+										</div>
+										<div class="col-md-2 talent-buttons">
+											<button type="submit" class="btn btn-default btn-talent profile">Closer look</button>
+											<button type="submit" class="btn btn-default btn-talent contact">Message</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- dynamically add "rows" of results -->
+	    					<div class="row">
+	    						<div class = "talent-photo col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/female_p40.png" class="img-responsive img-thumbnail" alt="talent photo">
+			    					</div>
+			    				</div>
+								<div class="talent-details col-md-10">
+									<div class="row">
+										<div class="col-md-5 talent-area">
+											<h4><a href="/talent/view/id/xxx" title="Full Stack Developer">Talent Name</a></h4>
+											<dl>
+												<dt>Location: </dt>
+												<dd>Town, Country</dd>
+											</dl>
+											<dl>
+												<dt>Last updated: </dt>
+												<dd>12 days ago</dd>
+											</dl>
+											<dl>
+												<dt>Education: </dt>
+												<dd>Master of Science</dd>
+											</dl>
+											<dl>
+												<dt>Total experience: </dt>
+												<dd>12 months</dd>
+											</dl>
+										</div>
+										<div class="col-md-5 talent-evaluation">
+											<dl>
+												<dt>Personal evaluation </dt>
+												<dd> Practical, initiative</dd>
+											</dl>
+											<dl>
+												<dt>Work behaviour</dt>
+												<dd>Leader, detail-oriented</dd>
+											</dl>
+											<dl>
+												<dt>Skills match: </dt>
+												<dd>78%</dd>
+											</dl>
+										</div>
+										<div class="col-md-2 talent-buttons">
+											<button type="submit" class="btn btn-default btn-talent profile">Closer look</button>
+											<button type="submit" class="btn btn-default btn-talent contact">Message</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- dynamically add "rows" of results -->
+	    					<div class="row">
+	    						<div class = "talent-photo col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/female_p40.png" class="img-responsive img-thumbnail" alt="talent photo">
+			    					</div>
+			    				</div>
+								<div class="talent-details col-md-10">
+									<div class="row">
+										<div class="col-md-5 talent-area">
+											<h4><a href="/talent/view/id/xxx" title="Full Stack Developer">Talent Name</a></h4>
+											<dl>
+												<dt>Location: </dt>
+												<dd>Town, Country</dd>
+											</dl>
+											<dl>
+												<dt>Last updated: </dt>
+												<dd>12 days ago</dd>
+											</dl>
+											<dl>
+												<dt>Education: </dt>
+												<dd>Master of Science</dd>
+											</dl>
+											<dl>
+												<dt>Total experience: </dt>
+												<dd>12 months</dd>
+											</dl>
+										</div>
+										<div class="col-md-5 talent-evaluation">
+											<dl>
+												<dt>Personal evaluation </dt>
+												<dd> Practical, initiative</dd>
+											</dl>
+											<dl>
+												<dt>Work behaviour</dt>
+												<dd>Leader, detail-oriented</dd>
+											</dl>
+											<dl>
+												<dt>Skills match: </dt>
+												<dd>78%</dd>
+											</dl>
+										</div>
+										<div class="col-md-2 talent-buttons">
+											<button type="submit" class="btn btn-default btn-talent profile">Closer look</button>
+											<button type="submit" class="btn btn-default btn-talent contact">Message</button>
+										</div>
+									</div>
+								</div>
+							</div>
+	    				</div>
+    					<nav class="">
+    						<ul class="pagination pagination-sm center-block">
+    							<li class="disabled">
+    								<a href="#"><span aria-hidden="true">&laquo;</span>
+    									<span class="sr-only">Previous</span>
+    								</a>
+    							</li>
+								<li class="active">
+									<a href="#">1 <span class="sr-only">(current)</span></a>
+								</li>
+								<li>
+									<a href="#"> 2 </a>
+								</li>
+								<li>
+									<a href="#"> 3 </a>
+								</li>
+								<li class="disabled">
+									<a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span>
+									</a>
+								</li>
+							</ul>
+    					</nav>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+
+
+
+
+	    <div class="hiddenContent jobs container">
+	    	<div class="row">
+	    		<div class="search-sidebar col-md-3">
+	    			<div class="form-title left-text">
+	    				Search job
+	    			</div>
+	    			<form role="form" id="job_search" name="job_search" method="post">
+						<div class="form-group">
+						    <label for="location_jobs">Location</label>
+						    <input type="text" class="form-control" id="location_jobs" placeholder="City, region or country">
+						</div>
+						<div class="form-group">
+						    <label for="industry_jobs">Industry</label>
+						    <select class="form-control" id="industry_jobs">
+						    	<option>IT</option>
+								<option>Finance</option>
+								<option>Construction</option>
+								<option>Law</option>
+								<option>Media</option>
+						    </select>
+						</div>
+						<div class="form-group">
+						    <label for="skills">Your skills</label>
+						    <select multiple class="form-control" id="skills">
+								<option>PHP</option>
+								<option>CSS</option>
+								<option>Javascript</option>
+								<option>Python</option>
+								<option>Databases</option>
+							</select>
+						    <p class="help-block">You can choose multiple skills by holding Ctrl button</p>
+						</div>
+						<div class="form-group">
+						    <label for="personal_eval">Personal evaluation</label>
+						    <input type="range" min="1" max="10" step="1" value="8" class="form-control" id="personal_eval" disabled>
+						    <label for="work_eval_jobs">Work behaviour</label>
+						    <input type="range" min="1" max="3" step="1" value="5" class="form-control" id="work_eval_jobs" disabled>
+						</div>
+						<button type="submit" class="btn btn-default btn-submit">Find Job!</button>
+					</form>
+	    		</div> <!-- search-sidebar -->
+
+
+	    		<div class="search-results col-md-9 ">
+
+	    			<div class="container-fluid search-results-title">
+	    				Search results
+	    			</div>
+	    			
+	    			<div class="area container-fluid"> 
+	    				<div class="row filter"> 
+	    					<div class="sort-options col-md-10">
+	    						<form class= "form-inline filter-options" name="job-options">
+									<div class="checkbox job-option">
+										<label>
+											<input type="checkbox"> do not consider personal evaluation
+										</label>
+									</div>
+									<div class="checkbox job-option">
+										<label>
+											<input type="checkbox"> experience &lt; 12m
+										</label>
+									</div>
+									<div class="checkbox job-option">
+										<label>
+											<input type="checkbox"> only full-time
+										</label>
+									</div>
+								</form>
+	    					</div>
+							<div class="search-dropdown form-inline col-md-2">
+								<div class="btn-group">
+									<button type="button" class="sort btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									    Sort by <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu">
+									  	<li><a href="#">Best match</a></li>
+									    <li><a href="#">Published date</a></li>
+									</ul>
+								</div>
+							</div>
+	    				</div> <!-- sort panel-->
+
+	    				<div class="results-list">
+	    					<!-- dynamically add "rows" of results -->
+	    					<div class="row">
+	    						<div class = "job-photo col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/j.png" class="img-responsive img-thumbnail" alt="talent photo">
+			    					</div>
+			    				</div>
+								<div class="job-details col-md-8">
+									<div class="row">
+										<div class="col-md-9 job-area">
+											<h4><a href="/talent/view/id/xxx" title="Full Stack Developer">Job title</a></h4>
+											<dl>
+												<dt>Company: </dt>
+												<dd>Company name</dd>
+											</dl>
+											<dl>
+												<dt>Description: </dt>
+												<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.  </dd>
+											</dl>
+											<dl>
+												<dt>Main skills: </dt>
+												<dd><ul class="list-unstyled list-inline ">
+													<li class="skills-required">PHP</li>
+													<li class="skills-required">AJAX</li>
+													<li class="skills-required">AnjularJS</li>
+													<li class="skills-required">CSS3</li>
+												</ul></dd>
+											</dl>
+										</div>
+										<div class="col-md-3 job-date">
+											<dl>
+												<dt>Published</dt>
+												<dd>28 Nov 2014</dd>
+											</dl>
+											<dl>
+												<dt>Expires</dt>
+												<dd>05 Dec 2014</dd>
+											</dl>
+											<dl>
+												<dt>Time remained: </dt>
+												<dd>5 days</dd>
+											</dl>
+										</div>
+									</div>
+
+								</div>
+								<div class="job-buttons col-md-2">
+									<button type="submit" class="btn btn-default btn-job apply">Apply</button>
+									<button type="submit" class="btn btn-default btn-job details">Details</button>
+								</div>
+							</div>
+
+							<div class="row">
+	    						<div class = "job-photo col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/j.png" class="img-responsive img-thumbnail" alt="talent photo">
+			    					</div>
+			    				</div>
+								<div class="job-details col-md-8">
+									<div class="row">
+										<div class="col-md-9 job-area">
+											<h4><a href="/talent/view/id/xxx" title="Full Stack Developer">Job title</a></h4>
+											<dl>
+												<dt>Company: </dt>
+												<dd>Company name</dd>
+											</dl>
+											<dl>
+												<dt>Description: </dt>
+												<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.  </dd>
+											</dl>
+											<dl>
+												<dt>Main skills: </dt>
+												<dd><ul class="list-unstyled list-inline ">
+													<li class="skills-required">PHP</li>
+													<li class="skills-required">AJAX</li>
+													<li class="skills-required">AnjularJS</li>
+													<li class="skills-required">CSS3</li>
+												</ul></dd>
+											</dl>
+										</div>
+										<div class="col-md-3 job-date">
+											<dl>
+												<dt>Published</dt>
+												<dd>28 Nov 2014</dd>
+											</dl>
+											<dl>
+												<dt>Expires</dt>
+												<dd>05 Dec 2014</dd>
+											</dl>
+											<dl>
+												<dt>Time remained: </dt>
+												<dd>5 days</dd>
+											</dl>
+										</div>
+									</div>
+
+								</div>
+								<div class="job-buttons col-md-2">
+									<button type="submit" class="btn btn-default btn-job apply">Apply</button>
+									<button type="submit" class="btn btn-default btn-job details">Details</button>
+								</div>
+							</div>
+
+							<div class="row">
+	    						<div class = "job-photo col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/j.png" class="img-responsive img-thumbnail" alt="talent photo">
+			    					</div>
+			    				</div>
+								<div class="job-details col-md-8">
+									<div class="row">
+										<div class="col-md-9 job-area">
+											<h4><a href="/talent/view/id/xxx" title="Full Stack Developer">Job title</a></h4>
+											<dl>
+												<dt>Company: </dt>
+												<dd>Company name</dd>
+											</dl>
+											<dl>
+												<dt>Description: </dt>
+												<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.  </dd>
+											</dl>
+											<dl>
+												<dt>Main skills: </dt>
+												<dd><ul class="list-unstyled list-inline ">
+													<li class="skills-required">PHP</li>
+													<li class="skills-required">AJAX</li>
+													<li class="skills-required">AnjularJS</li>
+													<li class="skills-required">CSS3</li>
+												</ul></dd>
+											</dl>
+										</div>
+										<div class="col-md-3 job-date">
+											<dl>
+												<dt>Published</dt>
+												<dd>28 Nov 2014</dd>
+											</dl>
+											<dl>
+												<dt>Expires</dt>
+												<dd>05 Dec 2014</dd>
+											</dl>
+											<dl>
+												<dt>Time remained: </dt>
+												<dd>5 days</dd>
+											</dl>
+										</div>
+									</div>
+
+								</div>
+								<div class="job-buttons col-md-2">
+									<button type="submit" class="btn btn-default btn-job apply">Apply</button>
+									<button type="submit" class="btn btn-default btn-job details">Details</button>
+								</div>
+							</div>
+						</div> <!-- results-list -->
+	    			</div>	<!-- area-->
+
+					<nav class="">
+						<ul class="pagination pagination-sm center-block">
+							<li class="disabled">
+								<a href="#"><span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="#">1 <span class="sr-only">(current)</span></a>
+							</li>
+							<li>
+								<a href="#"> 2 </a>
+							</li>
+							<li>
+								<a href="#"> 3 </a>
+							</li>
+							<li class="disabled">
+								<a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span>
+								</a>
+							</li>
+						</ul>
+    				</nav>
+	    		</div><!-- search-results -->
+	    	</div>	
+	    </div> <!-- hiddenContent companies -->
+
+	    <div class="hiddenContent events container">
+    		<div class="events-container container-fluid">
+
+    			<div class="events-title">
+    				
+    			</div>
+
+    			<div class="area container-fluid"> 
+
+    				<div class="row filter"> 
+    					<div class="filter-options">
+    						<form class= "form-inline" id="events-options" name="events-options">
+								<div class="form-group">
+						    		<label for="location_events">Location</label>
+						    		<input type="text" class="form-control" id="location_events" placeholder="city, region or country">
+								</div>
+								<div class="form-group">
+						    		<label for="keywords">Keywords</label>
+						    		<input type="text" class="form-control" id="keywords" placeholder="webinar, recruitment ...">
+								</div>
+								<div class="search-dropdown btn-group">
+									<button type="button" class="sort btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									    Sort by <span class="caret"></span>
+									</button>
+										<ul class="dropdown-menu" role="menu">
+										  	<li><a href="#">Date</a></li>
+										    <li><a href="#">Location</a></li>
+										</ul>
+								</div>
+							</form>
+						</div>
+    				</div> <!-- filter panel-->
+
+    				<div class="events-list">
+	    				<div id="upcoming" class="results-list">
+	    					<!-- dynamically add "rows" of results -->
+	    					<div class="row">
+	    						<div class="upcoming label label-primary">
+	    							Upcoming
+	    						</div>
+	    						<div class = "event-date col-md-2">
+		    						<div class="panel panel-default panel-date ">
+										<div class="panel-heading text-center">
+											<h3 class="panel-title ">Dec</h3>
+										</div>
+										<div class="panel-body text-center">
+											15
+										</div>
+									</div>
+			    				</div>
+	    						<div class = "event-img col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/main_img_new.png" class="img-responsive img-thumbnail" alt="event photo">
+			    					</div>
+			    				</div>
+								<div class="event-details col-md-8">
+									<h2><a href="/event/view/id/xxx">TalentTalks® Recruitment Event, </a> <small>12 December, 2014</small></h2>
+									
+
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+									</p>
+									<button type="submit" class="btn btn-default btn-event signup">Sign up</button>
+									<button type="submit" class="btn btn-default btn-event details">Read more</button>
+								</div>
+							</div>
+							<!-- dynamically add "rows" of results -->
+	    					<div class="row">
+	    						<div class="upcoming label label-primary">
+	    							Upcoming
+	    						</div>
+	    						<div class = "event-date col-md-2">
+		    						<div class="panel panel-default panel-date ">
+										<div class="panel-heading text-center">
+											<h3 class="panel-title ">Dec</h3>
+										</div>
+										<div class="panel-body text-center">
+											21
+										</div>
+									</div>
+			    				</div>
+	    						<div class = "event-img col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/main_img_new.png" class="img-responsive img-thumbnail" alt="event photo">
+			    					</div>
+			    				</div>
+								<div class="event-details col-md-8">
+									<h2><a href="/event/view/id/xxx">Career Fair</a> <small>21 December, 2014</small></h2>
+									
+
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+									</p>
+									<button type="submit" class="btn btn-default btn-event signup">Sign up</button>
+									<button type="submit" class="btn btn-default btn-event details">Read more</button>
+								</div>
+							</div>
+						</div> <!-- events-upcoming-list -->
+
+						<div class="events-subscribe">
+							<form class = "inline-form" role="form">
+								<div class="form-group">
+									<div class="input-group text-center" id="subscribe">
+										<label for="email-subscribe">Get notified about upcoming events: </label>
+										<div class="input-group text-center" >
+											<span class="input-group-addon">@</span>
+											<input type="email" class="form-control" id="email-subscribe" placeholder="Enter email to subscribe">
+											<span class="input-group-btn">
+	        									<button class="btn btn-default" type="button">Subscribe</button>
+	      									</span>
+	      								</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div id="finished" class="results-list">
+							<!-- dynamically add "rows" of results -->
+	    					<div class="row">
+	    						<div class="upcoming label label-default">
+	    							Finished
+	    						</div>
+	    						<div class = "event-date col-md-2">
+		    						<div class="panel panel-default panel-date ">
+										<div class="panel-heading text-center">
+											<h3 class="panel-title ">Oct</h3>
+										</div>
+										<div class="panel-body text-center">
+											30
+										</div>
+									</div>
+			    				</div>
+	    						<div class = "event-img col-md-2">
+		    						<div class="area-img">
+			    						<img src="static/images/main_img_new.png" class="img-responsive img-thumbnail" alt="event photo">
+			    					</div>
+			    				</div>
+
+
+								<div class="event-details col-md-8">
+									<h2><a href="/event/view/id/xxx">Bravo Talent</a> <small>30 October, 2014</small></h2>
+									
+									<div> Technopolis Innopoli 2, Espoo </div>
+									<div> Organizer: </div>
+
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+									</p>
+									<button type="submit" class="btn btn-default btn-event watch">Watch</button>
+									<button type="submit" class="btn btn-default btn-event details">Read more</button>
+								</div>
+							</div>
+						</div> <!-- events-finished-list -->
+					</div> <!-- events-list-->
+    			</div>	<!-- area-->
+
+				<nav class="">
+					<ul class="pagination pagination-sm center-block">
+						<li class="disabled">
+							<a href="#"><span aria-hidden="true">&laquo;</span>
+								<span class="sr-only">Previous</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">1 <span class="sr-only">(current)</span></a>
+						</li>
+						<li>
+							<a href="#"> 2 </a>
+						</li>
+						<li>
+							<a href="#"> 3 </a>
+						</li>
+						<li class="disabled">
+							<a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+	    	</div>
+	    </div>
+
+	    <footer class = "container">
+	    		<div class="row">
+	    			<div class="col-md-4 text-center" id="footer-links">
+	    				<ul>
+	    					<li> About the service</li>
+	    					<li> Terms of Use </li>
+	    					<li> Privacy policy </li>
+	    					<li> Recruiter memnership </li>
+	    				</ul>
+	    			</div>
+	    			<div class="col-md-4 text-center">
+	    				Global customer service: <a href="mailto:support@jobgo.com">support@jobgo.com</a>
+	    			</div>
+	    			<div class="col-md-4 text-center">
+	    				 Copyright © 2014 JobGo International Oy. All rights reserved.
+	    			</div>
+	    		</div>
+	    </footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="static/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="static/js/main.min.js"></script>
+	</body>
+</html>
+
