@@ -1,8 +1,8 @@
-== One page application
+## One page application
 
 Simple static mockup-design.
 
-=== Techniques used
+### Techniques used
 
 - HTML5
 - CSS3
