@@ -52,6 +52,21 @@
 	background: linear-gradient(to bottom, #3A9AE1 0%, #3EA4EF 4%, #3EA3EE 8%, #2373CB 100%) repeat scroll 0% 0% transparent;
 }
 
+@mixin btn-link {
+	border-color: $color-button;
+	color: $color-button;
+	font: 700 14px Montserrat,sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 20px auto;
+	border-radius: 6px;
+	text-decoration: none;
+	transition: all .3s;
+	border: 2px solid;
+}
+
 @mixin btn-big {
 	margin: 20px auto;
 	padding: 5px 30px;

@@ -1,29 +1,31 @@
 $(document).ready(function(){
 
-	function updateContent(hash) {
-		//remove the # character
-		var newClass = hash.substring(1);
-		// get a content from the respective div
-		var newContent = $("." + newClass).html();
-		// update main content
-		$("#inner_content_container").html(newContent);
-	}
+	// show images when scroll down window
+	$(window).on('load', function(){
+	    $(window).on('scroll', function(){
 
-	// redirect when page is reloaded
-	if(window.location.hash) {
-		updateContent(window.location.hash);
-		$(window.location.hash).addClass("active");
-	} else {
-		// if no hash is defined redirect to the home page
-		updateContent("#home");
-		$("#home").siblings().removeClass("active");
-		$("#home").addClass("active");
-	}
-	
-	$(".nav_item, .navbar-brand").click(function(){
-		updateContent($(this).attr("href"));
-		$(this).parent().siblings().removeClass("active");
-		$(this).parent().addClass("active");
-	});
+	    	if ($(this).scrollTop() >= 50) {
+	      		imageSlideIn("#jobbot img", "right");
+	    	  } 
+
+	    	if ($(this).scrollTop() >= 300) {
+	      		imageSlideIn("#talentpool img", "left");
+	   		 } 
+	    	if($(this).scrollTop() >= 550) {
+	    	  	imageSlideIn("#events img", "right");
+	    	    $(window).off('scroll');
+	    	}
+
+	    });
+  	});
+
+	// image slides in from the side of the screen
+  	function imageSlideIn(id, direction){
+  		if (direction == "right"){
+			$(id).animate({right:'0%'}, 1500);
+		} else{
+			$(id).animate({left:'0%'}, 1500);
+		}
+  	}
 
 });
